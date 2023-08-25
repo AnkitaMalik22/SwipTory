@@ -1,0 +1,111 @@
+.view_story_container {
+  /* position: fixed; */
+  top: 0;
+  height: 100vh;
+  overflow:hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+.view_story_container_small{
+  width: 100%;
+  height: 100%;
+}
+
+    
+
+.view_story {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.view_story__small{
+  width:100%;
+  height: 100%;
+}
+.view_storyDes {
+  padding: 0.5rem;
+}
+.story_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.close_btn,.share_btn{
+  margin: 1rem;
+}
+.like {
+  display: inline-flex;
+  margin: 1rem;
+  align-items: center;
+}
+.totalLikes {
+}
+.bookmark {
+  margin: 1rem;
+}
+.story_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 92%;
+  position: relative;
+  padding: 1rem 0;
+  z-index: 2;
+  
+}
+
+
+.story_btns_1{
+  position: absolute;
+  top: 4rem;
+  width: 30%;
+  background: linear-gradient(180deg, #000000, transparent);
+}
+.story_btns_2{
+  position: absolute;
+  bottom: 2rem;
+  width: 30%;
+  background: linear-gradient(0deg, black, transparent);
+}
+.story_btns_1_mob{
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  /* background: linear-gradient(180deg, #000000, transparent); */
+}
+.story_btns_2_mob{
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  background: linear-gradient(0deg, black, transparent);
+}
+
+
+
+@media screen and (max-width : 768px){
+.view_story_container,.view_story{
+  width: 100%;
+  height: 100%;
+}
+.story_btns_1{
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+}
+.story_btns_2{
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  background: linear-gradient(0deg, black, transparent);
+}
+}
+  
+

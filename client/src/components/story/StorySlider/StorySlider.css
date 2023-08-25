@@ -1,0 +1,126 @@
+.imageSlider {
+  width: 30vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*  ---------------- PROGRESS ---------------------- */
+
+.progress-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #060606, black);
+  width: 30%;
+}
+.progress-bar {
+  width: 15%;
+  height: 5px;
+  background-color: #d9d9d980;
+  overflow: hidden;
+
+  margin: 1rem;
+}
+
+.progress {
+  height: 100%;
+  background-color: #ffffff;
+  transition: width 0.1s linear;
+}
+
+.completed {
+  width: 100% !important;
+  background-color: #ffffff;
+}
+
+/* ---------------------------------------- */
+
+.buttons {
+  position: absolute;
+  top: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+  left: 25%;
+}
+
+.next-btn,
+.prev-btn {
+  top: 50%;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  border-radius: 50%;
+  background-color: #00000029;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn {
+  left: 10px;
+}
+.viewBtn {
+  position: relative !important;
+}
+
+/*  ---------------- SLIDER ---------------------- */
+
+.slide_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
+  z-index: 2;
+}
+
+.slide_text {
+  position: absolute;
+  bottom: 8rem;
+  left: 36%;
+}
+
+@media screen and (max-width: 768px) {
+  .imageSlider {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+  .buttons {
+    width: 100vw;
+    left: 0;
+  }
+  .slide_text {
+    position: absolute;
+    bottom: 7rem;
+    left: 1rem;
+    width: 90%;
+  }
+  .slide_heading {
+    font-size: 1.8rem;
+  }
+  .slide_p {
+    font-size: 0.8rem;
+  }
+  .progress-container {
+    width: 100%;
+  }
+}

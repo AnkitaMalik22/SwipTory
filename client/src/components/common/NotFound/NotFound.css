@@ -1,0 +1,29 @@
+.not_found_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  width: 100%;
+  text-align: center;
+}
+.not_found_heading {
+  font-size: 2.5rem;
+  margin-top: 0rem;
+  font-weight: 600;
+  color: #ed8526;
+  margin-bottom: 1.5rem;
+}
+.not_found_img {
+  width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .not_found_img {
+    width: 200px;
+  }
+  .not_found_heading {
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+  }
+}

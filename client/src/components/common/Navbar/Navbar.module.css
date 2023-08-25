@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0.8rem;
+  box-shadow: 0px 4px 15px 0px #00000026;
+}
+.logoText {
+  margin: 0;
+}
+.navBtns {
+  width: 36%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.regBtn,
+.loginBtn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.regBtn:hover,
+.loginBtn:hover {
+  transform: scale(1.1);
+}
+
+.regBtn {
+  background-color: #ff7373;
+  margin-right: 0.8rem;
+}
+.loginBtn {
+  background-color: #73abff;
+}
+
+.hamburger_content {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+.profile {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* ------------------  mob ------------------- */
+
+.hamburger_content_mob {
+  position: absolute;
+  width: 100%;
+  top: 3rem;
+
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 2rem 0rem;
+  z-index: 5;
+}
+.user_div {
+  width: 100%;
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+.close {
+  position: absolute;
+  top: 5.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  z-index: 6;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    margin-right: 1rem;
+  }
+}

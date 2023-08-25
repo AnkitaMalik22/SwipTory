@@ -1,0 +1,38 @@
+.button{
+    border: none;
+    color: white;
+    width: 9rem;
+    padding: 0.5rem 0rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.small_btn{
+    padding: 0.3rem 0rem !important;
+    margin-right: 0.8rem;
+}
+.small_btn_mob{
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+    margin-top: 0.5rem;
+}
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px){
+    .button{
+       border-radius: 5rem;
+    }
+   
+}
+

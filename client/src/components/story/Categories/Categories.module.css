@@ -1,0 +1,45 @@
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 1rem;
+  overflow-x: hidden;
+}
+
+.category {
+  width: 20%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+  background-position: center;
+  background-size: contain;
+}
+.categorySelected {
+  border: 0.3rem solid #73abff !important;
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    width: 100vw;
+    overflow-x: scroll;
+  }
+
+  .category {
+    width: 8rem;
+    height: 5rem;
+    padding: 0.3rem 5rem;
+    font-size: 0.8rem;
+  }
+  .categorySelected {
+    border: 0.3rem solid #73abff !important;
+  }
+}
