@@ -21,22 +21,28 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "../client/dist")));
 
 // app.use(cors());
-const whitelist = [
-  "https://swip-tory-pied.vercel.app",
-  "https://swip-tory-ankitamalik22.vercel.app",
-  "http://localhost:5173",
-  "http://localhost:4000",
-];
-const corsOptions = {
-  credentials: true,
-  origin: (origin, callback) => {
-    if (whitelist.includes(origin)) return callback(null, true);
+// const whitelist = [
+//   "https://swip-tory-pied.vercel.app",
+//   "https://swip-tory-ankitamalik22.vercel.app",
+//   "http://localhost:5173",
+//   "http://localhost:4000",
+// ];
+// const corsOptions = {
+//   credentials: true,
+//   origin: (origin, callback) => {
+//     if (whitelist.includes(origin)) return callback(null, true);
 
-    callback(new Error("Not allowed by CORS"));
-  },
-};
+//     callback(new Error("Not allowed by CORS"));
+//   },
+// };
 
 // app.use(cors());
+const corsOptions = {
+  credentials: true,
+  origin: "*",
+};
+app.use(cors(corsOptions));
+
 
 app.use(cookieParser());
 
