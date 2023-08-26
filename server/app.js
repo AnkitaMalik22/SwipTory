@@ -25,7 +25,7 @@ app.use(express.json());
 // app.use(express.static(path.join(__dirname, "../client/src")));
 
 // app.use(cors());
-const whitelist = ['https://swip-tory-pied.vercel.app', 'https://swip-tory-ankitamalik22.vercel.app'];
+const whitelist = ['https://swip-tory-pied.vercel.app', 'https://swip-tory-ankitamalik22.vercel.app','http://localhost:5173'];
 const corsOptions = {
   credentials: true, 
   origin: (origin, callback) => {
@@ -43,6 +43,10 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Since I am running multiple domain servers, the backend was behind a reverse proxy.
+//  By enabling trust proxy, my backend app will understand that its sitting behind a proxy and the X-Forwarded- header fields may be trusted. 
+app.set("trust proxy", 1);
 
 //-------------------- Connect to Database --------------------
 connectDB()
