@@ -16,7 +16,8 @@
     }
 
     .no_bookmarks{
-       
+        position: absolute;
+        top: 10rem;
         text-align: center;
         background: #73abff;
         color: #ffff;
@@ -28,6 +29,8 @@
     }
     .no_bookmark_heading{
         font-size: 1.5rem;
+        margin-bottom: 1.3rem;
+
     }
 
     @media screen and (max-width: 768px) {
@@ -40,6 +43,13 @@
             grid-template-columns: 1fr;
             place-items: center;
             justify-content: center;
+        }
+        .no_bookmarks{
+            position: static;
+        }
+        .no_bookmark_heading{
+          margin-bottom: 0.3rem;
+            
         }
     }
         

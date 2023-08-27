@@ -46,6 +46,13 @@ if(category!=='All'){
     console.log('New Story: ', newStory);
   }, [newStory]);
 
+
+  useEffect(() => {
+    if(newLike){
+      dispatch(endRequest())
+    }
+  }, [newLike]);
+
   const handleCategoryClick = (category) => {
     setCategory(category);
 

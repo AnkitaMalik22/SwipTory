@@ -122,6 +122,7 @@ const storySlice = createSlice({
     },
     endRequest: (state) => {
       state.newStory = false;
+      state.newLike = false;
     },
   },
 });
