@@ -13,7 +13,7 @@ const Home = () => {
 
  const { userId, isAuthenticated } = useSelector((state) => state.auth);
   const [category, setCategory] = useState("All");
-  const { storiesLoading ,categoryLoading ,newStory,userStories,userStoriesPage} = useSelector((state) => state.story);
+  const { storiesLoading ,categoryLoading ,newStory,userStories,userStoriesPage,newLike} = useSelector((state) => state.story);
 
   useEffect(() => {
 if(category!=='All'){
